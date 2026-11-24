@@ -1,0 +1,23 @@
+name: Report a site bug
+description: A page, button, diagram or the Playground doesn't work as expected.
+labels: [bug]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Filled in automatically when you use "Feedback" on the site.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened, and what did you expect?
+      description: Steps to reproduce help a lot. Never paste an API key.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: "e.g. Firefox 140 on Windows, Safari on iPhone"

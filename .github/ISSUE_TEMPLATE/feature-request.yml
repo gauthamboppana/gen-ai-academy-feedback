@@ -1,0 +1,20 @@
+name: Suggest a feature or topic
+description: An idea that would make the site more useful, or a topic you'd like covered.
+labels: [enhancement]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Where on the site (optional)
+      description: Filled in automatically when you use "Feedback" on the site.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you do?
+      description: The problem behind the idea helps more than a finished design.

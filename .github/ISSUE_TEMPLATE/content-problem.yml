@@ -1,0 +1,25 @@
+name: Report a problem with a lesson
+description: Something is wrong, out of date, unclear or broken on a page.
+labels: [documentation]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Page or lesson
+      description: Filled in automatically when you use "Report a problem" or "Feedback" on a page.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options: [Wrong or out-of-date fact, Unclear explanation, Question or answer is wrong, Diagram or Playground bug, Accessibility, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong, and what should it say?
+      description: Link a primary source if you can. Never paste an API key.
+    validations:
+      required: true
